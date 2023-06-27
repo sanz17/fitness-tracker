@@ -30,9 +30,9 @@ const HeroBanner = () => {
           Fitness tracker
         </Typography>
         <Typography fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '32px' } }}>
-          We are here to help <br /> you to achieve your <br /> fitness dreams.
+          Come! Lets achieve <br /> all of our <br /> fitness dreams.
         </Typography>
-        <Button variant="dark" component={Link} to="../pages/features">
+        <Button variant="dark" component={Link} to="../pages/features" style={{'fontSize':'20px'}}>
           What we offer &nbsp; &nbsp; <ArrowRightCircle size={35} />
         </Button>
       </Box>
