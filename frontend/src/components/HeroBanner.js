@@ -33,7 +33,7 @@ const HeroBanner = () => {
           We are here to help <br /> you to achieve your <br /> fitness dreams.
         </Typography>
         <Button variant="dark" component={Link} to="../pages/features">
-          What we offer <ArrowRightCircle size={35} />
+          What we offer &nbsp; &nbsp; <ArrowRightCircle size={35} />
         </Button>
       </Box>
       
