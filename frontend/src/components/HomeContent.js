@@ -8,7 +8,7 @@ const HomeContent = () => {
     <Container className="my-5">
       <Row className="mb-4">
         <Col className="text-center">
-          <h1>The Tools for Your Goals</h1>
+          <h1>Guides for You</h1>
           <p>
             Trying to lose weight, tone up, lower your BMI, or invest in your
             overall health? We give you the right features to get there.
