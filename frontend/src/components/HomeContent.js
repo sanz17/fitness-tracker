@@ -62,14 +62,14 @@ const HomeContent = () => {
             lifestyle.
           </p>
           <Button
-            variant="success"
+            variant="dark"
             className="me-2"
             as={Link}
             to="/pages/register"
           >
             Register
           </Button>
-          <Button variant="outline-primary" as={Link} to="/pages/login">
+          <Button variant="outline-dark" as={Link} to="/pages/login">
             Login
           </Button>
         </Col>
