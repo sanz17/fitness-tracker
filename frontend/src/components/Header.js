@@ -133,7 +133,7 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/pages/features">Features</NavLink>
+            <NavLink to="/pages/features">What we offer</NavLink>
             <NavLink to="/pages/workouts">Workout Database</NavLink>
             <NavLink to="/pages/nutrition-checker">Nutrition Checker</NavLink>
             <NavLink to="/pages/bmr-calculator">BMR</NavLink>

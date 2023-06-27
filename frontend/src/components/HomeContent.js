@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import Start from "../assets/images/start.jpg"
 
 const HomeContent = () => {
   return (
@@ -74,7 +75,7 @@ const HomeContent = () => {
         </Col>
         <Col md={6}>
           <img
-            src="https://landkit.goodthemes.co/assets/img/illustrations/illustration-2.png"
+            src={Start}
             alt="Banner"
             className="img-fluid"
           />
