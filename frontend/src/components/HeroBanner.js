@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { Link, useLocation } from "react-router-dom";
 import { Box, Stack, Typography, Button } from '@mui/material';
 import HeroBannerImage from '../assets/images/banner.jpg';
@@ -31,9 +32,8 @@ const HeroBanner = () => {
         <Typography fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '32px' } }}>
           We are here to help <br /> you to achieve your <br /> fitness dreams.
         </Typography>
-        <Button variant="contained" color="success" component={Link}
-  to="../pages/features">
-          What we offer
+        <Button variant="dark" component={Link} to="../pages/features">
+          What we offer <ArrowRightCircle size={35} />
         </Button>
       </Box>
       
