@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import { Container } from "react-bootstrap";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import PrivateRoute from "./components/PrivateRoute";
 import PublicRoute from "./components/PublicRoute";

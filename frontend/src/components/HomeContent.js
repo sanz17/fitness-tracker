@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button,Carousel } from "react-bootstrap";
 import Start from "../assets/images/start.jpg"
+import Track from "../assets/images/track.jpg"
+import Login from "../assets/images/login.jpg"
+import Positive from "../assets/images/positive.jpg"
 
 const HomeContent = () => {
   return (
@@ -9,49 +12,62 @@ const HomeContent = () => {
       <Row className="mb-4">
         <Col className="text-center">
           <h1>Guides for You</h1>
-          <p>
+          <p style={{'fontSize':'20px'}}>
             Trying to lose weight, tone up, lower your BMI, or invest in your
             overall health? We give you the right features to get there.
           </p>
         </Col>
       </Row>
 
-      <Row>
-        <Col md={4}>
-          <Card className="mb-4">
-            <Card.Body>
-              <Card.Title>Learn. Track. Improve.</Card.Title>
-              <Card.Text>
-                Keeping a food diary helps you understand your habits and
-                to hit your goals.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4}>
-          <Card className="mb-4">
-            <Card.Body>
-              <Card.Title>Logging Simplified.</Card.Title>
-              <Card.Text>
-                Save meals and use Quick Tools for
-                fast and easy food tracking.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4}>
-          <Card className="mb-4">
-            <Card.Body>
-              <Card.Title>Stay Motivated.</Card.Title>
-              <Card.Text>
-                Join the World's Largest Fitness Community for advice, tips, and
-                support 24/7.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+      <Row data-bs-theme="dark">
+        <Carousel >
+          <Carousel.Item interval={1000}>
+            <img
+              className="d-block w-50"
+              src={Track}
+              alt="First slide"
+              
+            />
+            <Carousel.Caption>
+              <h3 style={{'paddingLeft':'403px'}}>Track Learn Improve</h3>
+              <p style={{'paddingLeft':'435px'}}>Keeping a food diary helps you understand your habits and to hit your goals.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={1000}>
+            <img
+              className="d-block w-100"
+              src={Login}
+              alt="Second slide"
+              style={{
+                'height':'429px',
+                'paddingLeft':'510px',
+                'paddingRight':'288px'
+              }}
+            />
+            <Carousel.Caption>
+              <h3 style={{'paddingRight':'480px'}}>Logging simplified</h3>
+              <p style={{'paddingRight':'495px'}}>Save meals and use Quick Tools for fast and easy food tracking.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={Positive}
+              alt="Third slide"
+              style={{
+                'height':'429px',
+                'paddingLeft':'510px',
+                'paddingRight':'288px'
+              }}
+            />
+            <Carousel.Caption>
+              <h3 style={{'paddingRight':'500px'}}>Stay optimistic</h3>
+              <p style={{'paddingRight':'541px'}}>
+              Join the World's Largest Fitness Community for advice, tips, and support 24/7.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </Row>
 
       <Row className="align-items-center">
