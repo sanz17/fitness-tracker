@@ -37,7 +37,7 @@ const App = () => {
           <Route path="/pages/bmr-calculator" element={<BMRCalculator />} />
           <Route path="/pages/about" element={<About />} />
 
-          {/* Public Route */}
+        
           <Route path="" element={<PublicRoute />}>
             <Route path="/pages/register" element={<Register />} />
             <Route path="/pages/login" element={<Login />} />

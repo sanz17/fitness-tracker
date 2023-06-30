@@ -12,7 +12,7 @@ const HeroBanner = () => {
         ml: { sm: '50px' },
         display: 'flex',
         alignItems: 'center',
-        flexDirection: { lg: 'row', xs: 'column' }, // Change flex direction for responsiveness
+        flexDirection: { lg: 'row', xs: 'column' },
       }}
       position="relative"
       p="20px"
@@ -26,7 +26,7 @@ const HeroBanner = () => {
         />
       </Box>
       <Box flex="1">
-        <Typography color="FF2625" fontWeight="600" fontSize={{ lg: '26px', xs: '22px' }}> {/* Adjust font size based on breakpoints */}
+        <Typography color="FF2625" fontWeight="600" fontSize={{ lg: '26px', xs: '22px' }}> 
           Fitness tracker
         </Typography>
         <Typography fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '32px' } }}>
