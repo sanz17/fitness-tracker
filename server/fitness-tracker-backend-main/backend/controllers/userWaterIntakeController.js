@@ -1,7 +1,9 @@
 import asyncHandler from "express-async-handler";
 import UserWaterIntake from "../models/userWaterIntakeModel.js";
 
-
+// @desc        Log user's water intake
+// route        POST /api/users/water-intake
+// @access      Private
 const logWaterIntake = asyncHandler(async (req, res) => {
   const { litersDrank } = req.body;
   const date = new Date().toISOString().split("T")[0]; // Automatically set the date to today's date
