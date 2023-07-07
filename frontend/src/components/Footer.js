@@ -17,9 +17,6 @@ const Footer = () => {
               to="/pages/features">Features</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/pages/workouts" className="text-dark">Workout Planner</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
                 <Nav.Link as={Link} to="/pages/nutrition-checker" className="text-dark">Nutrition Checker</Nav.Link>
               </Nav.Item>
               <Nav.Item>
@@ -40,7 +37,7 @@ const Footer = () => {
                     href="https://github.com/sanz17">
                     Team Fitness tracker
                 </a>
-                . Made with {' '}
+                , with {' '}
                 <a
                     style={{ 'textDecoration': 'none', 'color': '#595959', 'fontWeight': 'bolder' }}
                     target="_blank"
