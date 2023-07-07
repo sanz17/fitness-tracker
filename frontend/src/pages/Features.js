@@ -1,65 +1,33 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 import Footer from "../components/Footer";
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
-const FeatureCard = ({ title, description, link }) => {
-  return (
-    <Card className="mb-4 text-center">
-      <Card.Body>
-        <Card.Title className="mt-3">{title}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-        <Link to={link} className="btn btn-primary">
-          Learn More
-        </Link>
-      </Card.Body>
-    </Card>
-  );
-};
+// const FeatureCard = ({ title, description, link }) => {
+//   return (
+//     <Card className="mb-4 text-center">
+//       <Card.Body>
+//         <Card.Title className="mt-3">{title}</Card.Title>
+//         <Card.Img></Card.Img>
+//         <Card.Text>{description}</Card.Text>
+//         <Link to={link} className="btn btn-primary">
+//           Learn More
+//         </Link>
+//       </Card.Body>
+//     </Card>
+//   );
+// };
 
 const FeaturesPage = () => {
-  const features = [
-    {
-      title: "Workout Database",
-      description:
-        "Our workout database is a comprehensive resource for anyone looking to improve their fitness. Find the perfect routine to target your specific goals.",
-      link: "/pages/workouts",
-    },
-    {
-      title: "Nutrition Checker",
-      description:
-        "With Nutrition Checker, you can quickly and easily see the nutritional value of any food, including calories, fat, protein, carbohydrates.",
-      link: "/pages/nutrition-checker",
-    },
-    {
-      title: "BMR Calculator",
-      description:
-        "Calculate your Basal Metabolic Rate (BMR) to determine your daily calorie needs. Get insights into your metabolism.",
-      link: "/pages/bmr-calculator",
-    },
-    {
-      title: "Create Account",
-      description:
-        "Create a personalized account to access additional features, save your progress, and customize your experience.",
-      link: "/pages/register",
-    },
-    {
-      title: "Meal Planner",
-      description:
-        "The Meal Planner is a feature that helps you plan your meals for the Day. The Meal Planner is a great way to save time and money, and to eat healthier!",
-      link: "/pages/profile/meal-plan",
-    },
-    {
-      title: "Water Intake Log",
-      description:
-        "Feature that helps you track how much water you drink each day. You can enter the amount of water you drink each time you take a drink.",
-      link: "/pages/profile/meal-plan",
-    },
-  ];
 
   return (
     <>
-      <Container className="mt-4">
+      {/* <Container className="mt-4">
         <h2 className="text-center mb-4">App Features</h2>
         <Row className="justify-content-center">
           {features.map((feature, index) => (
@@ -72,7 +40,58 @@ const FeaturesPage = () => {
             </Col>
           ))}
         </Row>
-      </Container>
+      </Container> */}
+      <Row xs={1} md={2} className="g-4">
+        <Col >
+          <Card>
+            <Card.Img variant="top" style={{'height':'283px','width':'459px','marginLeft':'110px'}} src="https://img.freepik.com/free-vector/people-keeping-healthy-diet_74855-5912.jpg" />
+            <Card.Body>
+              <Card.Title>Nutrition Checker</Card.Title>
+              <Card.Text>
+                With Nutrition Checker, you can quickly and easily see the nutritional value of any food, including calories, fat, protein, carbohydrates.
+              </Card.Text>
+              <Button variant="dark" className="mr-5" style={{'marginLeft':'250px'}} as={Link} to="/pages/nutrition-checker" >Check &nbsp; &nbsp; <ArrowRightCircle size={25} /></Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col >
+          <Card>
+            <Card.Img variant="top" style={{'height':'283px','width':'315px','marginLeft':'170px'}} src="https://img.freepik.com/premium-vector/bmr-basal-metabolic-rate-acronym-vector-stock-illustration_100456-10491.jpg?w=2000" />
+            <Card.Body>
+              <Card.Title>BMR Calculator</Card.Title>
+              <Card.Text>
+                Calculate your Basal Metabolic Rate (BMR) to determine your daily calorie needs. Get insights into your metabolism.
+              </Card.Text>
+              <Button variant="dark" style={{'marginLeft':'250px'}} as={Link} to="/pages/bmr-calculator">Check &nbsp; &nbsp; <ArrowRightCircle size={25} /></Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col >
+          <Card>
+            <Card.Img variant="top" style={{'height':'283px','width':'280px','marginLeft':'170px'}} src="https://static.vecteezy.com/system/resources/previews/010/051/927/original/meal-plan-icon-colorful-flat-design-illustration-graphics-free-vector.jpg" />
+            <Card.Body>
+              <Card.Title>Meal Planner</Card.Title>
+              <Card.Text>
+                The Meal Planner helps you to plan your fooding habit, is a great way to save time and money, and to eat healthier !
+              </Card.Text>
+              <Button variant="dark" style={{'marginLeft':'250px'}} as={Link} to="/pages/profile/meal-plan">Plan &nbsp; &nbsp; <ArrowRightCircle size={25} /></Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col >
+          <Card>
+            <Card.Img variant="top" style={{'height':'283px','width':'459px','marginLeft':'110px'}} src="https://img.freepik.com/free-vector/tiny-woman-pouring-clean-water-from-faucet-with-mountain-landscape_74855-11024.jpg" />
+            <Card.Body>
+              <Card.Title>Water Intake Log</Card.Title>
+              <Card.Text>
+                This helps you track how much water you drink each day. You can enter the amount of water you drink each time you take a drink.
+              </Card.Text>
+              <Button variant="dark" style={{'marginLeft':'250px'}} as={Link} to="/pages/profile/water-intake">Check &nbsp; &nbsp; <ArrowRightCircle size={25} /></Button>
+            </Card.Body>
+          </Card>
+        </Col>
+
+      </Row>
       <Footer />
     </>
   );
