@@ -6,22 +6,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
-    "client": "npm run start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Shape-Up-NZ/shape-up-app.git"
+    "dev": "nodemon server.js",
+    "test": "jest",
+    "build":"npm i"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Shape-Up-NZ/shape-up-app/issues"
-  },
-  "homepage": "https://github.com/Shape-Up-NZ/shape-up-app#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
