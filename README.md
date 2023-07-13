@@ -12,9 +12,9 @@
 ## Tech Stack
 
 - ReactJS & Redux
-- MaterialUI
+- MaterialUI & Bootstrap
 - MongoDB
-- Express JS
+- Express & Node JS
 - JWT
 - Vercel
 
