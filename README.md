@@ -5,6 +5,10 @@
 ### Frontend deploy link 
 [Click me](https://fitness-tracker-frontend-dun.vercel.app/)
 
+
+### Backend deploy link 
+[Click me](https://fitness-tracker-backend-4q71.onrender.com/)
+
 ## Tech Stack
 
 - ReactJS & Redux
